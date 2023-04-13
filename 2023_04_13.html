@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>입력양식 추가 실습</h1>
+    <form action="" method="post" name="form1">
+        <fieldset>
+            <legend>인적사항 조사</legend>
+        이름을 입력하세요:<input type="text" required placeholder="예시>홍길동"><br>
+        학번을 입력하세요:<input type="text" required placeholder="예시>10614" autofocus><br>
+        색상: <input type="color"><br>
+        키를 입력하세요: <input type="number" name="number" min="130" max="200" step="5" value="150"><br>
+        좋아하는 숫자를 입력해주세요(단1~10까지): <br> <input type="range" min="1" max="10" value="5"><br>
+        비밀번호를 분실했을 때 질문:
+        <select name="password">
+            <option value="1">내가 태어난 동네 이름은?</option>
+            <option value="2">나의 초등학교 이름은?</option>
+            <option value="3">토키와다이의 에이스는?</option>
+        </select><br>
+        내가 좋아하는 것:
+        <input list="lang" type="" name="browser"><br>
+        <datalist id="browsers">
+            <option value="chrome">크롬</option>
+            <option value="edge">엣지</option>
+            <option value="safari">사파리</option>
+        </datalist>
+        <datalist id="lang">
+            <option value="C">C</option>
+            <option value="python">python</option>
+            <option value="JavaScript">JavaScript</option>
+        </datalist>
+        <input type="file" accept="image/jpg,image/png">
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
