@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../media/kana1.gif');
+            background-size: 1920px 1080px;
+            }
+
+            
+        .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        table {
+        border-collapse: collapse;
+        }
+
+        td {
+        padding: 20px;
+        text-align: center;
+        }
+
+        #text{
+        font-size: 36px;
+        color: white;
+        }
+        textarea:hover{
+            background-color: rgba(15, 22, 85, 0.1);;
+        }
+            /* margin-left: auto;margin-right: auto;margin-top: auto;margin-bottom: auto;} */
+    </style>
+</head>
+<body>
+      <div class="overlay">
+        <table>
+          <tr>
+            <td>
+              <h1 id="text" style="font-size: 150px;">Arima Kana</h1>
+                <p id="text">상품평</p>
+                <textarea name="" id="ta" cols="60" rows="30" style="background-color: rgba(15, 22, 85, 1);"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+</body>
+</html>
