@@ -1,0 +1,33 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+}
+
+.container .item{
+    border: 1px solid yellowgreen;
+    
+}
+
+
+.container .item:nth-child(1){
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    z-index: -10;
+    position: static;
+}
+
+.container .item:nth-child(2){
+    width: 100px;
+    height: 120px;
+    background-color: rgb(10, 9, 9);
+    left: 6 0px;
+    z-index: 10px;
+    position: absolute;
+}
+.container .item:nth-child(3){
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 8, 8);
+}
