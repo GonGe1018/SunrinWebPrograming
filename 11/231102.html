@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal()//문제 값을 받아서 입력한 답과 정답을 비교
+        {
+            let answer = document.getElementById("answer").value;
+            let s = document.getElementById("problem").value;
+            let solution = eval(s);
+        if(answer==solutions)
+        {
+            alert("정답입니다.");
+        }
+        else
+        {
+            alert("정답이 아닙니다.");
+        }
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body style="
+    
+align-items: center;">
+    <p
+    style="text-align: center;
+    font-family: Pretendard-Regular;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Maht Quiz</p>
+    <input type="text" id="problem" value="12*2+20-30"
+    style="width: 861px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    font-size: 40px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+    margin-left: 326px;
+    "
+    ><br>
+    <input type="text" id="answer"
+    style="width: 861px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    font-size: 40px;
+    padding-left: 30px;
+    margin-left: 326px;"><br>
+    <button onclick="cal()">정답 알아보기</button>
+</body>
+</html>
