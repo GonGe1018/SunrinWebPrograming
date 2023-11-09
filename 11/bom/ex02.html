@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Signal</title>
+    <style>
+    #traffic-signal{
+    border: 8px solid black;
+    padding: 10px 10px;
+    width: 50px;
+    border-radius: 50px;
+}
+#traffic-signal > div{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+#green{
+    background-color: green;
+    border-color: black;
+}
+#yellow{
+    background-color: yellow;
+    border-color: black;
+}
+#red{
+    background-color: red;
+    border-color: black;
+}
+    </style>
+</head>
+<body onload="startTrafficSignal()">
+    <div id="traffic-signal">
+        <div id="green"></div>
+        <div id="yellow"></div>
+        <div id="red"></div>
+    </div>
+    <div id="line1"></div>
+    <div id="line2"></div>
+    <script>
+        function startTrafficSignal () 
+        {
+            var green = document.getElementById("green");
+            var red = document.getElementById("red");
+            var yellow = document.getElementById("yellow");
+    
+            setTimeout(function () {
+                green.style.backgroundColor="green";
+                red.style.backgroundColor="white";
+                yellow.style.backgroundColor="white"
+            },0);
+        
+            setTimeout(function () {
+                green.style.backgroundColor="white";
+                red.style.backgroundColor="red";
+                yellow.style.backgroundColor="white"
+            },1000);
+        
+            setTimeout(function () {
+                green.style.backgroundColor="white"
+                red.style.backgroundColor="white";
+                yellow.style.backgroundColor="yellow";
+            },2000);
+        }
+ 
+        var timer=setInterval(startTrafficSignal,3000);
+    
+    </script>
+</body>
+</html>
